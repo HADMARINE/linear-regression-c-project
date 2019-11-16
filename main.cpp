@@ -6,19 +6,7 @@
 //
 
 
-//include
-#include "main.hpp"
-#include "iostream"
-
-//define
-
-//using
-using namespace std;
-
-//function declaration
-int* inputMethod();
-void printValue(int* valuePtr);
-int* calculateLinear();
+//include와 define, function declaration - main.hpp에 하시길 바랍니다
 
 //MAIN Method
 int main(){

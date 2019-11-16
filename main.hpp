@@ -6,8 +6,23 @@
 //
 
 #ifndef main_hpp
+
+
+//include
+#include <stdio.h>
+#include "main.hpp"
+#include "iostream"
+
+//define
 #define main_hpp
 
-#include <stdio.h>
+//using
+using namespace std;
+
+//function declaration
+int* inputMethod();
+void printValue(int* valuePtr);
+int* calculateLinear();
+
 
 #endif /* main_hpp */
