@@ -9,12 +9,14 @@
 /* Begin PBXFileReference section */
 		41DE6C4823803089005AF654 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		41DE6C4923803089005AF654 /* main.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = main.hpp; sourceTree = "<group>"; };
+		41DE6C4A23803195005AF654 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		41DE6C4123803063005AF654 = {
 			isa = PBXGroup;
 			children = (
+				41DE6C4A23803195005AF654 /* .gitignore */,
 				41DE6C4823803089005AF654 /* main.cpp */,
 				41DE6C4923803089005AF654 /* main.hpp */,
 			);
