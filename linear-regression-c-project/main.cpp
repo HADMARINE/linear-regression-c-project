@@ -12,6 +12,7 @@
 
 //MAIN Method
 int main(){
+    cout << "값을 입력하세요" << endl;
     int* testInputValue1 = inputMethod();
     printValue(testInputValue1);
     return 0;
@@ -22,13 +23,17 @@ int main(){
 int* inputMethod(){
     //데이터를 입력받아 포인터 주소를 반환합니다.
     int* inputPtr;
-    scanf("%d",inputPtr);
+    int inputValue;
+    
+    scanf("%d", &inputValue);
+    inputPtr = &inputValue;
+    
     return inputPtr;
 }
 
 void printValue(int* valuePtr){
     //포인터 주소를 받아 값을 출력합니다.
-    cout << &valuePtr << endl;
+    printf("%d\n", *valuePtr);
 }
 
 int* calculateLinear(){
