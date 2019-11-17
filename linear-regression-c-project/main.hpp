@@ -23,7 +23,7 @@ using namespace std;
 //function declaration
 int* inputMethod();
 void printValue(int* valuePtr);
-int* calculateLinear();
+int* calculateLinearMain();
 
 
 #endif /* main_hpp */
