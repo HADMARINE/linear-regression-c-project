@@ -36,7 +36,7 @@ void printValue(int* valuePtr){
     printf("%d\n", *valuePtr);
 }
 
-int* calculateLinear(){
+int* calculateLinearMain(){
     //계산하는 메인 메서드입니다.
     return 0;
 }
