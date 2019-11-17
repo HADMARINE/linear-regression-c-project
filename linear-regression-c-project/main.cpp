@@ -8,8 +8,12 @@
 
 //include와 define, function declaration - main.hpp에 하시길 바랍니다
 
+#include "main.hpp"
+
 //MAIN Method
 int main(){
+    int* testInputValue1 = inputMethod();
+    printValue(testInputValue1);
     return 0;
 }
 

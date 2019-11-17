@@ -1,16 +1,17 @@
 //
-//  main.hpp
+//  main.h
 //  linear-regression-c-project
 //
-//  Created by 이호준 on 2019/11/16.
+//  Created by 이호준 on 2019/11/17.
+//  Copyright © 2019 HADMARINE. All rights reserved.
 //
+
 
 #ifndef main_hpp
 
 
 //include
 #include <stdio.h>
-#include "main.hpp"
 #include "iostream"
 
 //define
