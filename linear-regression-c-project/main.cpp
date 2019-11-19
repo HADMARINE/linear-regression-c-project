@@ -1,4 +1,3 @@
-//
 //  main.cpp
 //  linear-regression-c-project
 //
