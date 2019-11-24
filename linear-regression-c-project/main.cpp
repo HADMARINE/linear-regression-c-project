@@ -1,48 +1,57 @@
-//  main.cpp
-//  linear-regression-c-project
-//
-//  Created by 이호준 on 2019/11/16.
-//
+#include <stdio.h>
+#include <windows.h>
 
 
-//include, define, function declaration -> main.hpp에서 하십시오
+#define LEFT 75
+#define RIGHT 77
+#define UP 72
+#define DOWN 80
+#define SPACE 32
 
-#include "main.hpp"
+#define WHITE 1
+#define BLACK 2
+#define NONE 0
 
-void howToUseKeyIoMethod(){
-    //키보드 입출력 메서드의 사용 방법입니다.
-    //키보드 입출력 변수는 포인터 변수를 사용합니다.
-    cout << "값을 입력하세요" << endl;
-    int* testInputValue1 = inputMethod();
-    printValue(testInputValue1);
+int board[19][19];
+
+void gotoxy(int x, int y)
+{
+    COORD CursorPos = { x,y };
+    SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), CursorPos);
 }
 
-//MAIN Method
-//메인 메서드에서는 되도록이면 함수의 호출만 일어나도록 하십시오.
-int main(){
-    howToUseKeyIoMethod();
-    return 0;
-}
-
-
-//functions
-int* inputMethod(){
-    //데이터를 입력받아 저장하고 포인터 주소를 반환합니다.
-    int* inputPtr;
-    int inputValue;
+void Print()
+{
+    int x, y;
     
-    scanf("%d", &inputValue);
-    inputPtr = &inputValue;
-    
-    return inputPtr;
+    board[0][0] = WHITE;
+    board[1][1] = BLACK;
+
+    for (y = 0;y < 19;y++) {
+        for (x = 0;x < 19;x++) {
+            if (board[y][x] == WHITE) printf("○");
+            else if (board[y][x] == BLACK) printf("●");
+
+            else if (x == 0 && y == 0) printf("┌");
+            else if (x == 0 && y == 18) printf("└");
+            else if (x == 18 && y == 0)printf("┐");
+            else if (x == 18 && y == 18)printf("┘");
+            else if (x == 0) printf("├");
+            else if (y == 0) printf("┬");
+            else if (x == 18) printf("┤");
+            else if (y == 18) printf("┴");
+            else printf("┼");
+
+            if (board[y][x] != WHITE&&board[y][x]!= BLACK&&x!=18) printf("─");
+
+        }
+        printf("\n");
+    }
+
 }
 
-void printValue(int* valuePtr){
-    //포인터 주소를 받아 값을 출력합니다.
-    cout << *valuePtr << endl;
-}
-
-int* calculateLinearMain(){
-    //계산하는 메인 메서드입니다.
-    return 0;
+int main() {
+    Print();
+    int x;
+    scanf("%d", &x);
 }
